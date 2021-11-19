@@ -13,6 +13,7 @@ import java.util.List;
  * @author Jiat
  */
 @RestController
+@RequestMapping("/test")
 public class TestController {
     @Autowired
     private TestService testService;
@@ -25,7 +26,7 @@ public class TestController {
     public String hello(){
         return "Hello World!Test";
     }
-    @GetMapping("/test/list")
+    @GetMapping("/list")
     public List<Test> list(){
         return testService.list();
     }

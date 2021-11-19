@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+        <generatorConfiguration>
+
+        <context defaultModelType="flat" targetRuntime="MyBatis3" id="Mysql">
+
+    <!-- 自动检查关键字，为关键字增加反引号 -->
+
+
+    <property value="true" name="autoDelimitKeywords"/>
+
+    <property value="`" name="beginningDelimiter"/>
+
+    <property value="`" name="endingDelimiter"/>
+
+    <!--覆盖生成XML文件-->
+
+
+    <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>
+
+    <!-- 生成的实体类添加toString()方法 -->
+
+
+    <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+
+    <!-- 不生成注释 -->
+
+
+
+    <commentGenerator>
+
+    <property value="true" name="suppressAllComments"/>
+
+</commentGenerator>
+
+    <jdbcConnection password="123456" userId="wiki" connectionURL="jdbc:mysql://rm-uf6470s9615e13hc4no.mysql.rds.aliyuncs.com:3306/wiki?serverTimezone=Asia/Shanghai" driverClass="com.mysql.cj.jdbc.Driver"> </jdbcConnection>
+
+    <!-- domain类的位置 -->
+
+
+    <javaModelGenerator targetPackage="com.jiawa.wiki.domain" targetProject="src\main\java"/>
+
+    <!-- mapper xml的位置 -->
+
+
+    <sqlMapGenerator targetPackage="mapper" targetProject="src\main\resources"/>
+
+    <!-- mapper类的位置 -->
+
+
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.jiawa.wiki.mapper" targetProject="src\main\java"/>
+
+    <!--<table tableName="demo" domainObjectName="Demo"/>-->
+
+
+    <!--<table tableName="ebook"/>-->
+
+
+    <!--<table tableName="category"/>-->
+
+
+    <!--<table tableName="doc"/>-->
+
+
+    <!--<table tableName="content"/>-->
+
+
+    <!--<table tableName="user"/>-->
+
+
+    <table tableName="demo" domainObjectName="Demo"/>
+
+</context>
+</generatorConfiguration>
