@@ -1,17 +1,14 @@
-package com.jiawa.wiki.domain;
+package com.jiawa.wiki.req;
 
-/**
- * @author Jiat
- */
-public class Test {
-    private Integer id;
+public class EbookReq {
+    private Long id;
     private String name;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

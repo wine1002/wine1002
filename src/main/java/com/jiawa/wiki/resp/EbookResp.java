@@ -1,6 +1,6 @@
-package com.jiawa.wiki.domain;
+package com.jiawa.wiki.resp;
 
-public class Ebook {
+public class EbookResp {
     private Integer id;
     private String name;
     private int category1_id;
