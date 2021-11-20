@@ -1,5 +1,7 @@
 package com.jiawa.wiki.service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.jiawa.wiki.domain.Ebook;
 import com.jiawa.wiki.domain.EbookExample;
 import com.jiawa.wiki.mapper.EbookMapper;
@@ -25,7 +27,12 @@ public class EbookService {
         if(!ObjectUtils.isEmpty(req.getName())) {
             criteria.andNameLike("%" + req.getName() + "%");
         }
+        PageHelper.startPage(1,3);
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
+//知道分页的总行数和总页数
+//        PageInfo<Ebook> pageInfo = new PageInfo<>(ebookList);
+//        pageInfo.getTotal();
+//        pageInfo.getPages();
 
 //        List<EbookResp> respList = new ArrayList<>();
 //        for (Ebook ebook:ebookList){
