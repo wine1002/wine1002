@@ -305,52 +305,52 @@ public class EbookExample {
         }
 
         public Criteria andCategory2IdEqualTo(Long value) {
-            addCriterion("category2_id =", value, "category2Id");
+            addCriterion("category2_id =", value, "category2_id");
             return (Criteria) this;
         }
 
         public Criteria andCategory2IdNotEqualTo(Long value) {
-            addCriterion("category2_id <>", value, "category2Id");
+            addCriterion("category2_id <>", value, "category2_id");
             return (Criteria) this;
         }
 
         public Criteria andCategory2IdGreaterThan(Long value) {
-            addCriterion("category2_id >", value, "category2Id");
+            addCriterion("category2_id >", value, "category2_id");
             return (Criteria) this;
         }
 
         public Criteria andCategory2IdGreaterThanOrEqualTo(Long value) {
-            addCriterion("category2_id >=", value, "category2Id");
+            addCriterion("category2_id >=", value, "category2_id");
             return (Criteria) this;
         }
 
         public Criteria andCategory2IdLessThan(Long value) {
-            addCriterion("category2_id <", value, "category2Id");
+            addCriterion("category2_id <", value, "category2_id");
             return (Criteria) this;
         }
 
         public Criteria andCategory2IdLessThanOrEqualTo(Long value) {
-            addCriterion("category2_id <=", value, "category2Id");
+            addCriterion("category2_id <=", value, "category2_id");
             return (Criteria) this;
         }
 
         public Criteria andCategory2IdIn(List<Long> values) {
-            addCriterion("category2_id in", values, "category2Id");
+            addCriterion("category2_id in", values, "category2_id");
             return (Criteria) this;
         }
 
         public Criteria andCategory2IdNotIn(List<Long> values) {
-            addCriterion("category2_id not in", values, "category2Id");
+            addCriterion("category2_id not in", values, "category2_id");
             return (Criteria) this;
         }
 
         public Criteria andCategory2IdBetween(Long value1, Long value2) {
-            addCriterion("category2_id between", value1, value2, "category2Id");
+            addCriterion("category2_id between", value1, value2, "category2_id");
             return (Criteria) this;
         }
 
         public Criteria andCategory2IdNotBetween(Long value1, Long value2) {
-            addCriterion("category2_id not between", value1, value2, "category2Id");
+            addCriterion("category2_id not between", value1, value2, "category2_id");
             return (Criteria) this;
         }
 
@@ -505,52 +505,52 @@ public class EbookExample {
         }
 
         public Criteria andDocCountEqualTo(Integer value) {
-            addCriterion("doc_count =", value, "docCount");
+            addCriterion("doc_count =", value, "doc_count");
             return (Criteria) this;
         }
 
         public Criteria andDocCountNotEqualTo(Integer value) {
-            addCriterion("doc_count <>", value, "docCount");
+            addCriterion("doc_count <>", value, "doc_count");
             return (Criteria) this;
         }
 
         public Criteria andDocCountGreaterThan(Integer value) {
-            addCriterion("doc_count >", value, "docCount");
+            addCriterion("doc_count >", value, "doc_count");
             return (Criteria) this;
         }
 
         public Criteria andDocCountGreaterThanOrEqualTo(Integer value) {
-            addCriterion("doc_count >=", value, "docCount");
+            addCriterion("doc_count >=", value, "doc_count");
             return (Criteria) this;
         }
 
         public Criteria andDocCountLessThan(Integer value) {
-            addCriterion("doc_count <", value, "docCount");
+            addCriterion("doc_count <", value, "doc_count");
             return (Criteria) this;
         }
 
         public Criteria andDocCountLessThanOrEqualTo(Integer value) {
-            addCriterion("doc_count <=", value, "docCount");
+            addCriterion("doc_count <=", value, "doc_count");
             return (Criteria) this;
         }
 
         public Criteria andDocCountIn(List<Integer> values) {
-            addCriterion("doc_count in", values, "docCount");
+            addCriterion("doc_count in", values, "doc_count");
             return (Criteria) this;
         }
 
         public Criteria andDocCountNotIn(List<Integer> values) {
-            addCriterion("doc_count not in", values, "docCount");
+            addCriterion("doc_count not in", values, "doc_count");
             return (Criteria) this;
         }
 
         public Criteria andDocCountBetween(Integer value1, Integer value2) {
-            addCriterion("doc_count between", value1, value2, "docCount");
+            addCriterion("doc_count between", value1, value2, "doc_count");
             return (Criteria) this;
         }
 
         public Criteria andDocCountNotBetween(Integer value1, Integer value2) {
-            addCriterion("doc_count not between", value1, value2, "docCount");
+            addCriterion("doc_count not between", value1, value2, "doc_count");
             return (Criteria) this;
         }
 
